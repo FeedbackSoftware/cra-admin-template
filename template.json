@@ -1,7 +1,4 @@
 {
-  "name": "cra-template-fbacks-admin",
-  "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@react-keycloak/web": "^2.1.4",
     "@testing-library/jest-dom": "^4.2.4",
@@ -21,20 +18,5 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }

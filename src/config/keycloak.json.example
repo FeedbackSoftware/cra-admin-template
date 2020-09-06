@@ -1,0 +1,10 @@
+{
+  "realm": "test-realm",
+  "auth-server-url": "http://localhost:8180/auth/",
+  "url": "http://localhost:8180/auth/",
+  "ssl-required": "external",
+  "resource": "test-realm-react-client",
+  "clientId": "test-realm-react-client",
+  "public-client": true,
+  "confidential-port": 0
+}
