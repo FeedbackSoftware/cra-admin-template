@@ -1,7 +1,30 @@
 {
   "name": "cra-template-fbacks-admin",
   "version": "0.1.0",
-  "private": true,
+  "license": "MIT",
+  "author": "Angel Garcia <angelgarcia@fbacks.com",
+  "description": "A quick start Create React App template with React Admin, Keycloak, and MixPanel",
+  "main": "template.json",
+  "files": [
+    "template",
+    "template.json"
+  ],
+  "keywords": [
+    "react",
+    "create-react-app",
+    "cra-template",
+    "template",
+    "keycloak",
+    "admin",
+    "redux",
+    "react-admin",
+    "mixpanel"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FeedbackSoftware/cra-admin-template",
+    "directory": "/"
+  },
   "dependencies": {
     "@react-keycloak/web": "^2.1.4",
     "@testing-library/jest-dom": "^4.2.4",
@@ -20,10 +43,18 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "clean-files": "rm -rf ./template/public ./template/src && rm -f ./template/.eslintrc",
+    "copy-files": "cp -a ./src/. template/src && cp -a ./public/. template/public && cp .eslintrc template/",
+    "prepublishOnly": "yarn clean-files && yarn copy-files"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "latest",
+    "access": "public"
   },
   "browserslist": {
     "production": [
